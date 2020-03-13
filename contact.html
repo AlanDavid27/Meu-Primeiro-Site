@@ -1,12 +1,89 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="UTF-8">
-        
-        <title>Jane Doe - Contato</title>
+            <meta charset="UTF-8">
+            <title>Jane Doe - Contact</title>
+            <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+            <link rel="stylesheet" href="css/styleContact.css">
     </head>
     <body>
-        <h1>Contato</h1>
+            <header>
+                <nav>
+                    <!--menu  e logo vão dentro dessa div-->
+                    <a href="index.html"><h1 id="logo">Jane Doe</h1> </a>
+        
+                    <ul>
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="about.html">About</a>
+                        </li>
+                        <li>
+                            <a href="music.html">Music </a>
+                        </li>
+                        <li>
+                            <a href="contact.html">Contact </a> 
+                        </li>              
+                    </ul>
+                </nav>
+                </header>
+        <main class="contact">
+            <section class="contact-form">
+                <h1>Contato</h1>
+                <form action="POST" >
+                    <label for="name">Name</label>
+                    
+                    <input type="text" name="nameUsuario">
+                    
+                    <label for="email">Email</label>
+                    
+                    <input type="email" name="emailUsuario" >
+                    
+                    <label for="massage">Massage</label>
+                    
+                    <textarea name="text" id="massage" cols="30" rows="2"></textarea>
+                    
+                    <p>How did you found Jane's music?</p>
+                    <br>
+                    <input type="radio" name="social" value="instragram">
+                    <label>Instragram</label>
+                    <input type="radio" name="social" value="facebook">
+                    <label>Facebook</label>
+                    <input type="radio" name="social" value="youtube">
+                    <label>Youtube</label>
+                   
+                    <input type="checkbox" name="newsletter?"> 
+                    <label >Do you want to subscribe to our newsletter?</label>
+                    
+                    <button type="submit">Send</button>
+                </form>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d49187.33090832373!2d-46.675705890334584!3d-23.608986094554854!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x739f0ddb0439cf94!2sDigital%20House%20S%C3%A3o%20Paulo!5e0!3m2!1spt-BR!2sbr!4v1584123970317!5m2!1spt-BR!2sbr" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+
+                <div>
+                    <h2>MANAGEMENT | Karen Blanche</h2>
+                    <p>email: <a >info@mysite.com</a></p>
+                    <p>phone: <a >123-456-7890</a> </p>
+                </div>
+
+                <div>
+                    <h2>BOOKING | Daniel Ku</h2>
+                    <p>email: <a >info@mysite.com</a></p>
+                    <p>phone: <a >123-456-7890</a> </p>
+                </div>
+                <div>
+                    <h2>LABEL | Wix Records, Jake Coldham</h2>
+                    <p>email: <a >info@mysite.com</a></p>
+                    <p>phone: <a >123-456-7890</a> </p>
+                </div>
+                <div>
+                    <h2>PR | That Girl Pr, Sarah Brookstone</h2>
+                    <p>email: <a >info@mysite.com</a></p>
+                    <p>phone: <a >123-456-7890</a> </p>
+                </div>
+            </section>
+        </main>
+        
         
     </body>
 </html>
